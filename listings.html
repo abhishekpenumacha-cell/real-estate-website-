@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Property Listings | Prime Estates</title>
+<meta name="description" content="Browse verified villas, apartments, houses and commercial properties for sale and rent across Bengaluru with Prime Estates.">
+<meta property="og:title" content="Property Listings | Prime Estates">
+<meta property="og:description" content="Filter by type, budget, bedrooms and city to find your next property.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a href="#main" class="visually-hidden">Skip to content</a>
+
+<header class="site-header">
+  <div class="container header-row">
+    <a href="index.html" class="logo">Prime<span>.</span>Estates</a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="listings.html" class="active">Listings</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a href="contact.html" class="btn btn-primary">Book a Viewing</a>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="boundary-line" aria-hidden="true"></div>
+
+<main id="main">
+
+  <section class="page-hero" style="padding-bottom:120px;">
+    <div class="container">
+      <p class="breadcrumb"><a href="index.html">Home</a> / Listings</p>
+      <p class="eyebrow">Current Inventory</p>
+      <h1>12 Properties, Verified This Month</h1>
+    </div>
+  </section>
+
+  <div class="container">
+    <form class="listings-toolbar reveal" aria-label="Refine search">
+      <div class="search-field"><label for="l-location">Location</label><input type="text" id="l-location" placeholder="City or area"></div>
+      <div class="search-field"><label for="l-type">Type</label>
+        <select id="l-type"><option>Any</option><option>Apartment</option><option>Villa</option><option>House</option><option>Commercial</option></select>
+      </div>
+      <div class="search-field"><label for="l-purpose">Buy / Rent</label>
+        <select id="l-purpose"><option>Any</option><option>Buy</option><option>Rent</option></select>
+      </div>
+      <div class="search-field"><label for="l-beds">Bedrooms</label>
+        <select id="l-beds"><option>Any</option><option>1+</option><option>2+</option><option>3+</option><option>4+</option></select>
+      </div>
+      <div class="search-field"><label for="l-budget">Budget</label>
+        <select id="l-budget"><option>Any</option><option>Under ₹50L</option><option>₹50L–1Cr</option><option>₹1Cr–3Cr</option><option>₹3Cr+</option></select>
+      </div>
+      <div class="search-field"><label for="l-bath">Bathrooms</label>
+        <select id="l-bath"><option>Any</option><option>1+</option><option>2+</option><option>3+</option></select>
+      </div>
+      <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="listings-layout">
+
+        <!-- FILTER SIDEBAR -->
+        <aside>
+          <form data-listing-filters>
+            <div class="filter-block">
+              <h4>Buy or Rent</h4>
+              <label class="filter-option"><input type="radio" name="purpose" value="all" checked> All</label>
+              <label class="filter-option"><input type="radio" name="purpose" value="buy"> For Sale</label>
+              <label class="filter-option"><input type="radio" name="purpose" value="rent"> For Rent</label>
+            </div>
+            <div class="filter-block">
+              <h4>Property Type</h4>
+              <label class="filter-option"><input type="radio" name="type" value="all" checked> All Types</label>
+              <label class="filter-option"><input type="radio" name="type" value="apartment"> Apartment</label>
+              <label class="filter-option"><input type="radio" name="type" value="villa"> Villa</label>
+              <label class="filter-option"><input type="radio" name="type" value="house"> House</label>
+              <label class="filter-option"><input type="radio" name="type" value="commercial"> Commercial</label>
+            </div>
+            <div class="filter-block">
+              <h4>Budget (₹)</h4>
+              <div class="range-row">
+                <input type="number" placeholder="Min" aria-label="Minimum budget">
+                <input type="number" placeholder="Max" aria-label="Maximum budget">
+              </div>
+            </div>
+            <div class="filter-block">
+              <h4>Bedrooms</h4>
+              <label class="filter-option"><input type="checkbox"> 1</label>
+              <label class="filter-option"><input type="checkbox"> 2</label>
+              <label class="filter-option"><input type="checkbox"> 3</label>
+              <label class="filter-option"><input type="checkbox"> 4+</label>
+            </div>
+            <div class="filter-block" style="border-bottom:0;">
+              <h4>City</h4>
+              <label class="filter-option"><input type="checkbox" checked> Bengaluru</label>
+              <label class="filter-option"><input type="checkbox"> Mysuru</label>
+              <label class="filter-option"><input type="checkbox"> Hyderabad</label>
+            </div>
+          </form>
+        </aside>
+
+        <!-- LISTINGS GRID -->
+        <div>
+          <div class="listings-header-row">
+            <span class="results-count" data-results-count>Showing 12 of 12 properties</span>
+            <select class="sort-select" aria-label="Sort listings">
+              <option>Sort: Newest First</option>
+              <option>Price: Low to High</option>
+              <option>Price: High to Low</option>
+              <option>Area: Largest First</option>
+            </select>
+          </div>
+
+          <div class="grid grid-3 reveal">
+
+            <article class="property-card" data-listing-card data-type="villa" data-purpose="buy">
+              <div class="property-media"><img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=900&auto=format&fit=crop" alt="Whitefield Residence villa exterior"><span class="property-tag">For Sale</span><span class="property-price">₹4.2 Cr</span></div>
+              <div class="property-body"><h3>The Whitefield Residence</h3><p class="property-address">📍 Whitefield, Bengaluru</p><p style="font-size:.85rem;">Gated villa with private pool and landscaped garden.</p><div class="property-specs"><span>🛏 4</span><span>🛁 4</span><span>▢ 3,800 sqft</span></div></div>
+            </article>
+
+            <article class="property-card" data-listing-card data-type="apartment" data-purpose="rent">
+              <div class="property-media"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=900&auto=format&fit=crop" alt="Lakeview Grand Apartments exterior"><span class="property-tag">For Rent</span><span class="property-price">₹85,000/mo</span></div>
+              <div class="property-body"><h3>Lakeview Grand Apartments</h3><p class="property-address">📍 Sarjapur Road, Bengaluru</p><p style="font-size:.85rem;">Lake-facing 3BHK with clubhouse and gym access.</p><div class="property-specs"><span>🛏 3</span><span>🛁 3</span><span>▢ 2,100 sqft</span></div></div>
+            </article>
+
+            <article class="property-card" data-listing-card data-type="apartment" data-purpose="buy">
+              <div class="property-media"><img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?q=80&w=900&auto=format&fit=crop" alt="Skyline Penthouse living room"><span class="property-tag">For Sale</span><span class="property-price">₹7.9 Cr</span></div>
+              <div class="property-body"><h3>Skyline Penthouse Suites</h3><p class="property-address">📍 UB City, Bengaluru</p><p style="font-size:.85rem;">Full-floor penthouse with 270° skyline views.</p><div class="property-specs"><span>🛏 5</span><span>🛁 5</span><span>▢ 5,200 sqft</span></div></div>
+            </article>
+
+            <article class="property-card" data-listing-card data-type="house" data-purpose="buy">
+              <div class="property-media"><img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=900&auto=format&fit=crop" alt="Willow Park independent house"><span class="property-tag">For Sale</span><span class="property-price">₹2.6 Cr</span></div>
+              <div class="property-body"><h3>Willow Park Independent House</h3><p class="property-address">📍 Yelahanka, Bengaluru</p><p style="font-size:.85rem;">Corner-plot house with private garden and garage.</p><div class="property-specs"><span>🛏 3</span><span>🛁 2</span><span>▢ 2,450 sqft</span></div></div>
+            </article>
+
+            <article class="property-card" data-listing-card data-type="commercial" data-purpose="rent">
+              <div class="property-media"><img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=900&auto=format&fit=crop" alt="Commercial office space interior"><span class="property-tag">For Rent</span><span class="property-price">₹2,10,000/mo</span></div>
+              <div class="property-body"><h3>Orion Business Suites</h3><p class="property-address">📍 Outer Ring Road, Bengaluru</p><p style="font-size:.85rem;">Grade-A office floor with 60 workstations, ready to move.</p><div class="property-specs"><span>🏢 Floor 6</span><span>▢ 6,800 sqft</span></div></div>
+            </article>
+
+            <article class="property-card" data-listing-card data-type="villa" data-purpose="rent">
+              <div class="property-media"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=900&auto=format&fit=crop" alt="Modern villa with pool at dusk"><span class="property-tag">For Rent</span><span class="property-price">₹1,50,000/mo</span></div>
+              <div class="property-body"><h3>Palm Meadows Villa</h3><p class="property-address">📍 Devanahalli, Bengaluru</p><p style="font-size:.85rem;">Fully furnished 4BHK villa in a gated community.</p><div class="property-specs"><span>🛏 4</span><span>🛁 4</span><span>▢ 3,600 sqft</span></div></div>
+            </article>
+
+            <article class="property-card" data-listing-card data-type="apartment" data-purpose="buy">
+              <div class="property-media"><img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=900&auto=format&fit=crop" alt="Compact modern apartment building"><span class="property-tag">For Sale</span><span class="property-price">₹68 L</span></div>
+              <div class="property-body"><h3>Cedar Court Residences</h3><p class="property-address">📍 Electronic City, Bengaluru</p><p style="font-size:.85rem;">Compact 2BHK, ideal for first-time buyers near tech parks.</p><div class="property-specs"><span>🛏 2</span><span>🛁 2</span><span>▢ 1,150 sqft</span></div></div>
+            </article>
+
+            <article class="property-card" data-listing-card data-type="house" data-purpose="rent">
+              <div class="property-media"><img src="https://images.unsplash.com/photo-1568084680786-a84f91d1153c?q=80&w=900&auto=format&fit=crop" alt="Family house with driveway"><span class="property-tag">For Rent</span><span class="property-price">₹65,000/mo</span></div>
+              <div class="property-body"><h3>Maple Grove House</h3><p class="property-address">📍 JP Nagar, Bengaluru</p><p style="font-size:.85rem;">Quiet cul-de-sac home, walk to schools and parks.</p><div class="property-specs"><span>🛏 3</span><span>🛁 2</span><span>▢ 1,980 sqft</span></div></div>
+            </article>
+
+            <article class="property-card" data-listing-card data-type="commercial" data-purpose="buy">
+              <div class="property-media"><img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=900&auto=format&fit=crop" alt="Retail storefront property"><span class="property-tag">For Sale</span><span class="property-price">₹3.1 Cr</span></div>
+              <div class="property-body"><h3>Marigold High Street Retail</h3><p class="property-address">📍 Indiranagar, Bengaluru</p><p style="font-size:.85rem;">Ground-floor retail unit on a high-footfall shopping street.</p><div class="property-specs"><span>🏢 Ground Floor</span><span>▢ 1,600 sqft</span></div></div>
+            </article>
+
+            <article class="property-card" data-listing-card data-type="villa" data-purpose="buy">
+              <div class="property-media"><img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=900&auto=format&fit=crop" alt="Luxury villa with garden landscaping"><span class="property-tag">For Sale</span><span class="property-price">₹5.6 Cr</span></div>
+              <div class="property-body"><h3>Cascade Hills Villa</h3><p class="property-address">📍 Hennur, Bengaluru</p><p style="font-size:.85rem;">Split-level villa with home theatre and terrace garden.</p><div class="property-specs"><span>🛏 4</span><span>🛁 5</span><span>▢ 4,100 sqft</span></div></div>
+            </article>
+
+            <article class="property-card" data-listing-card data-type="apartment" data-purpose="rent">
+              <div class="property-media"><img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?q=80&w=900&auto=format&fit=crop" alt="High-rise apartment building"><span class="property-tag">For Rent</span><span class="property-price">₹42,000/mo</span></div>
+              <div class="property-body"><h3>Birchwood Towers</h3><p class="property-address">📍 Bannerghatta Road, Bengaluru</p><p style="font-size:.85rem;">Studio-style 1BHK, ideal for young professionals.</p><div class="property-specs"><span>🛏 1</span><span>🛁 1</span><span>▢ 640 sqft</span></div></div>
+            </article>
+
+            <article class="property-card" data-listing-card data-type="house" data-purpose="buy">
+              <div class="property-media"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=900&auto=format&fit=crop" alt="Two storey suburban house"><span class="property-tag">For Sale</span><span class="property-price">₹1.9 Cr</span></div>
+              <div class="property-body"><h3>Rosewood Family Home</h3><p class="property-address">📍 Kanakapura Road, Bengaluru</p><p style="font-size:.85rem;">Two-storey home with dedicated home office and yard.</p><div class="property-specs"><span>🛏 3</span><span>🛁 3</span><span>▢ 2,200 sqft</span></div></div>
+            </article>
+
+          </div>
+
+          <div class="pagination">
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <span>…</span>
+            <a href="#" aria-label="Next page">→</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED STRIP -->
+  <section class="section section--navy section--tight">
+    <div class="container">
+      <div class="section-head-row reveal">
+        <div class="section-head mb-0"><p class="eyebrow">Don't Miss</p><h2>This Week's Featured Property</h2></div>
+        <a href="contact.html" class="btn btn-outline-light">Schedule a Viewing</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-band reveal">
+        <p class="eyebrow" style="justify-content:center;">Can't Find the Right Fit?</p>
+        <h2>Tell Us What You're Looking For — We'll Find It</h2>
+        <a href="contact.html" class="btn btn-primary">Talk to an Agent</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="footer-logo">Prime<span>.</span>Estates</div>
+      <p style="max-width:280px;">A premium real estate agency helping buyers, investors and families find property they'll never want to leave.</p>
+      <div class="social-row">
+        <a href="#" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4V8h4v1.5A6 6 0 0 1 16 8Z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="listings.html">Listings</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div>
+      <h4>Categories</h4>
+      <a href="listings.html">Luxury Villas</a>
+      <a href="listings.html">Apartments</a>
+      <a href="listings.html">Commercial</a>
+      <a href="listings.html">Rentals</a>
+    </div>
+    <div>
+      <h4>Stay Updated</h4>
+      <p style="font-size:.9rem;">New listings, market notes, once a month.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit" aria-label="Subscribe">→</button>
+      </form>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 Prime Estates. All rights reserved.</span>
+    <div style="display:flex;gap:20px;">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms &amp; Conditions</a>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" aria-label="Scroll to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m18 15-6-6-6 6"/></svg>
+</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
